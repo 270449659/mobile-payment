@@ -6,9 +6,9 @@
 		      <image class="item-icon" src="/static/images/home/item1-icon.png"></image>
 		      <view class="item-text">套餐余量</view>
 		    </view>
-		    <view class="menu-item"  @click="goPhone()">
+		    <view class="menu-item"  @click="goCardInformation()">
 		      <image class="item-icon" src="/static/images/home/item2-icon.png"></image>
-		      <view class="item-text">充值交费</view>
+		      <view class="item-text">卡片信息</view>
 		    </view>
 		    <view class="menu-item"  @click="goCashgift()" >
 		      <image class="item-icon" src="/static/images/home/item3-icon.png"></image>
@@ -54,6 +54,16 @@ export default{
 			
 		}
 	},
+	
+	methods: {
+		goCardInformation() {
+			 uni.navigateTo({
+				url:'/pages/user/card-information'			
+			});
+		 
+		}
+	}
+	
 }
 </script>
 <style>

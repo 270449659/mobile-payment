@@ -13,15 +13,15 @@
 				<view class="flow-status-info-box uni-block mgt65">
 					<view class="uni-flex flow-status-info-box-list">
 						<view class="flow-status-info-box-item mglr45">
-						   <view class="flow-status-info-box-item-number mgb25">0MB</view>
+						   <view class="flow-status-info-box-item-number text-center mgb25">0MB</view>
 						   <view class="flow-status-info-box-item-font">总流量</view>
 						</view>
 						<view class="flow-status-info-box-item mglr45">
-							<view class="flow-status-info-box-item-number mgb25">0MB</view>
+							<view class="flow-status-info-box-item-number text-center mgb25">0MB</view>
 							<view class="flow-status-info-box-item-font">已用流量</view>
 						</view>
 						<view class="flow-status-info-box-item mglr45">
-							<view class="flow-status-info-box-item-number mgb25">没实名</view>
+							<view class="flow-status-info-box-item-number text-center mgb25">没实名</view>
 							<view class="flow-status-info-box-item-font">实名状态</view>
 						</view>
 						

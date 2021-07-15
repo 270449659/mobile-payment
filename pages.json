@@ -46,6 +46,14 @@
 			}
 		},
 		{
+			"path": "pages/voucherCenter/index",
+			"style": {
+				"navigationBarBackgroundColor":"#03b7e0",
+				"navigationBarTitleText": "充值中心",
+				"navigationBarTextStyle":"white"  //状态栏字体颜色
+			}
+		},
+		{
 			"path" : "pages/login/login",
 			"style" : {
 			   "navigationBarBackgroundColor":"#03b7e0",

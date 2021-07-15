@@ -9,7 +9,7 @@
         <image class="item-icon" src="/static/images/home/item1-icon.png"></image>
         <view class="item-text">套餐余量</view>
       </view>
-      <view class="menu-item"  @click="goPhone()">
+      <view class="menu-item"  @click="goVoucherCenter()">
         <image class="item-icon" src="/static/images/home/item2-icon.png"></image>
         <view class="item-text">充值交费</view>
       </view>
@@ -56,6 +56,14 @@ export default{
 			
 		}
 	},
+	methods: {
+		goVoucherCenter(){
+			uni.navigateTo({
+				url:'/pages/voucherCenter/index'			
+			})
+		}	
+	}
+	
 }
 </script>
 <style>

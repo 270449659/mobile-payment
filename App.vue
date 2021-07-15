@@ -16,6 +16,10 @@
 	video {width: 100%}
 	.uni-block{display: block;}
 	.uni-flex{display: flex;}
+	.flex-warp{flex-wrap: wrap;}
+	.flex-align-items-center{display:flex; align-items: center;}
+	.flex-justify-content-b{display:flex;justify-content: space-between;}
+	.flex-justify-content-s-b{display:flex; align-items: center;justify-content: space-between;}
 	.mgt10{margin-top: 10rpx !important;}
 	.mgt15{margin-top: 15rpx !important;}
 	.mgt20{margin-top: 20rpx !important;}
@@ -29,6 +33,14 @@
 	.mglr30{margin-left: 30rpx!important;margin-right:30rpx!important;}
 	.mglr45{margin-left: 45rpx!important;margin-right:45rpx!important;}
 	.pdb30{padding-bottom: 30rpx !important;}
-
+	/*字体布局*/
+	.text-left{text-align:left!important;}
+	.text-center{text-align:center!important;}
+	.text-right{text-align:right!important;}
+	/*overflow状态*/
+	.overflow-hidden{overflow:hidden !important;}
+	.overflow-visible{overflow:visible !important;}
+	.overflow-auto{overflow:auto !important;}
+	.scroll-y-show{overflow-y: auto; overflow-x:hidden;}
 	/*每个页面公共css */
 </style>

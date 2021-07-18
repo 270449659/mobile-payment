@@ -16,23 +16,29 @@
 	video {width: 100%}
 	.uni-block{display: block;}
 	.uni-flex{display: flex;}
-	.flex-warp{flex-wrap: wrap;}
+	.flex-warp{display: flex; flex-wrap: wrap;}
 	.flex-align-items-center{display:flex; align-items: center;}
 	.flex-justify-content-b{display:flex;justify-content: space-between;}
+	.flex-justify-content-center{display:flex; align-items: center;justify-content:center;}
 	.flex-justify-content-s-b{display:flex; align-items: center;justify-content: space-between;}
+	.flex-justify-content-f-e{display:flex; align-items: center;justify-content: flex-end;}
 	.mgt10{margin-top: 10rpx !important;}
 	.mgt15{margin-top: 15rpx !important;}
 	.mgt20{margin-top: 20rpx !important;}
 	.mgt25{margin-top: 25rpx !important;}
 	.mgt30{margin-top: 30rpx !important;}
+	.mgt40{margin-top: 40rpx !important;}
 	.mgt50{margin-top: 50rpx !important;}
 	.mgl5{margin-left:5rpx!important;}
 	.mgl10{margin-left:10rpx!important;}
+	.mgl20{margin-left:20rpx!important;}
+	.mgr20{margin-right:20rpx!important;}
 	.mgb20{margin-bottom: 20rpx !important;}
 	.mgb25{margin-bottom: 25rpx !important;}
 	.mglr30{margin-left: 30rpx!important;margin-right:30rpx!important;}
 	.mglr45{margin-left: 45rpx!important;margin-right:45rpx!important;}
 	.pdb30{padding-bottom: 30rpx !important;}
+	.mgb50{margin-bottom: 50rpx !important;}
 	/*字体布局*/
 	.text-left{text-align:left!important;}
 	.text-center{text-align:center!important;}
@@ -43,4 +49,11 @@
 	.overflow-auto{overflow:auto !important;}
 	.scroll-y-show{overflow-y: auto; overflow-x:hidden;}
 	/*每个页面公共css */
+	 .voucher-center uni-label{font-size:25rpx}
+	.voucher-center uni-radio .uni-radio-input {
+		width: 35rpx;
+		height:35rpx;
+	}
+	.order uni-label{font-size:28rpx;}
+	.order uni-radio{margin-left:30rpx}
 </style>

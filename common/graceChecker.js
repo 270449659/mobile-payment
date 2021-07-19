@@ -4,6 +4,7 @@
 module.exports = {
 	error:'',
 	check : function (data, rule){
+		console.log(data,rule)
 		for(var i = 0; i < rule.length; i++){
 			if (!rule[i].checkType){return true;}
 			if (!rule[i].name) {return true;}

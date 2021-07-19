@@ -5,7 +5,7 @@
 		<view class="charge-rate uni-flex"> 
 		   <view class="charge-rate-box uni-flex"> 
 			   <text class="charge-rate-title mgr20"> 充流量号码:</text>				
-			   <input type="text" name="chargeRateNumber" class="charge-rate-input" v-model="chargeRateNumber" placeholder="请输入ICCID或接入卡号" />
+			   <input type="text" name="chargeRateNumber" @input="onKeyInput" maxlength="30" class="charge-rate-input" v-model="chargeRateNumber" placeholder="请输入ICCID或接入卡号" />
 			  <image  @click="GetinputDelete" class="input-delete-icon mgl10" src="/static/images/voucherCenter/input-delete-icon.png"></image> 
 			</view>
 			<view class="flex-align-items-center mail-list">
@@ -14,30 +14,42 @@
 			</view>
 		</view> 
 		<!--充流量号码end-->
-		<!-- 加油包-->
-		<view class="monthly-package superposition mgt50">
-			<view class="flex-align-items-center monthly-package-title">
-				<text class="monthly-package-title-text mgl20">充余额</text>
+		<!-- 充余额-->
+		<view class="charge-balance superposition mgt50">
+			<view class="flex-align-items-center charge-balance-title">
+				<text class="charge-balance-title-text mgl20">充余额</text>
 			</view>
-			<view class="monthly-package-list  uni-flex">
-				<view class="monthly-package-item flex-justify-content-center">
-					<image  src="/static/images/voucherCenter/choice-icon.png"></image>
+			<view class="charge-balance-list  uni-flex"> 
+				<view @click="chargeBalance(1)" class="charge-balance-item flex-justify-content-center">
+					<image v-if="active==1" src="/static/images/voucherCenter/choice-icon.png"></image>
 					<text>10元</text>	
 				</view>
-				<view class="monthly-package-item flex-justify-content-center">	
+				<view @click="chargeBalance(2)" class="charge-balance-item flex-justify-content-center">
+					<image v-if="active==2" src="/static/images/voucherCenter/choice-icon.png"></image>
 					<text>30元</text>		
 				</view>
-				<view class="monthly-package-item flex-justify-content-center">	
+				<view @click="chargeBalance(3)" class="charge-balance-item flex-justify-content-center">	
+				<image v-if="active==3" src="/static/images/voucherCenter/choice-icon.png"></image>
 					<text>50元</text>	
 				</view>
+			</view>
+		</view>
+		<view class="balance flex-justify-content-s-b mgt30 mgb50"> 
+		   <view class="balance-left"> 钱包余额:<text class="balance-text">22.11</text>元 </view> <view class="balance-right">到账金额:<text class="balance-text">22.11</text>元 </view>  
+		</view>
+		<!-- 充余额 end-->
+		<view class="payment mgt50 pdb30">
+			<view class=""> 
+			     <view class="flex-justify-content-s-b"><view class=""><image class="payment-icon" src="/static/images/user/WeChat-icon.png"></image>微信</view><label class="radio"><radio value="r1" checked="true" /></label></view>
+			    <view class="flex-justify-content-s-b"> <view class=""><image class="payment-icon" src="/static/images/user/Alipay-icon.png"></image>支付宝</view><label class="radio"><radio value="r1" checked="true" /></label></view>
+			    <view class="flex-justify-content-s-b"> <view class=""> <image class="payment-icon" src="/static/images/user/balance-icon.png"></image>钱包</view><label class="radio"><radio value="r1" checked="true" /></label></view>
+			    <view class="flex-justify-content-s-b"> <view class=""><image class="payment-icon" src="/static/images/user/balance-icon.png"></image>银联</view><label class="radio"><radio value="r1" checked="true" /></label></view>
 			</view>
 		</view>
 		<view class="discount mgt50 flex-justify-content-s-b">
 			<label class="radio"><radio value="r1" checked="true" />优惠</label>
 			<view class="discount-right-text">无可用</view>
 		</view>
-		<!-- 加油包 end-->
-		
 		 <view  @click="goProductAttr" class="submit mgt50">
 			 <text class="">￥10.00立刻支付</text>
 			  <image  v-if="completed==true" class="bnt-background" src="/static/images/voucherCenter/bnt-background-true-icon.png"></image> 
@@ -54,13 +66,37 @@
 				chargeRateNumber:null,
 				hotIcon:true,
 				completed:false,//已填为true
+				inputValue:null,//监听号码
+				active:1
 			}
 		},
 		onLoad() {
 
 		},
 		methods: {
-
+			//监听号码
+			 onKeyInput: function(event) {
+			   console.log(event)  
+			    this.inputValue = event.target.value
+				if(this.inputValue){
+				   if(this.inputValue.length>11){
+					   uni.showToast({
+							title: '请输入11位码号',
+							duration: 1000
+						});
+				   }else{
+					   this.completed=true;
+					// this.$refs.popup.open('bottom')				  
+				   }
+				}
+			 },
+			 //监听号码
+           goProductAttr(){
+			   
+		   },
+		   chargeBalance(number){
+			   this.active=number;
+		   }
 		}
 	}
 </script>
@@ -96,28 +132,33 @@
 		height: 33rpx;
 		line-height: 33rpx;
 	}
-	.monthly-package{}
-	.monthly-package .monthly-package-title{margin-bottom: 28rpx;}
-	.monthly-package .monthly-package-title .title-vertical{width: 9rpx; height: 33rpx; background:#ff6711; border-radius: 20rpx;}
-	.monthly-package .monthly-package-title text{line-height:30rpx; font-size: 30rpx; color: #333333;}
-	.monthly-package .monthly-package-title text.monthly-package-title-text-explain{line-height:20rpx;color: #9b9b9b; font-size: 20rpx;}
-	.monthly-package .monthly-package-title image{
+	.charge-balance{}
+	.charge-balance .charge-balance-title{margin-bottom: 28rpx;}
+	.charge-balance .charge-balance-title .title-vertical{width: 9rpx; height: 33rpx; background:#ff6711; border-radius: 20rpx;}
+	.charge-balance .charge-balance-title text{line-height:30rpx; font-size: 30rpx; color: #333333;}
+	.charge-balance .charge-balance-title text.charge-balance-title-text-explain{line-height:20rpx;color: #9b9b9b; font-size: 20rpx;}
+	.charge-balance .charge-balance-title image{
 		width:29rpx;
 		height: 28rpx;
 		}
-	.monthly-package .monthly-package-list{justify-content:space-between;}
-	.monthly-package .monthly-package-item{position: relative; width: 218rpx; border: 1px solid #e8e8e8; flex-direction: column; padding: 30rpx 0;  border-radius: 15rpx;   }
+	.charge-balance .charge-balance-list{justify-content:space-between;}
+	.charge-balance .charge-balance-item{position: relative; width: 218rpx; border: 1px solid #e8e8e8; flex-direction: column; padding: 30rpx 0;  border-radius: 15rpx;   }
 		
-	.monthly-package .monthly-package-item image{
+	.charge-balance .charge-balance-item image{
 		position: absolute; bottom: 0; right: 0;
 		width:32rpx;
 		height: 32rpx;
 		border-radius: 0 0 10rpx 0 ;
 	
 		}
-	.monthly-package .monthly-package-item text{ text-align: center; font-size: 26rpx; line-height:26rpx;  }
-	.monthly-package .monthly-package-item text.monthly-package-item-text{margin-top:20rpx; color:#949494; font-size:20rpx; line-height:20rpx; }
-    .wallet .discount .discount {font-size:26rpx;}
+	.charge-balance .charge-balance-item text{ text-align: center; font-size: 26rpx; line-height:26rpx;  }
+	.charge-balance .charge-balance-item text.charge-balance-item-text{margin-top:20rpx; color:#949494; font-size:20rpx; line-height:20rpx; }
+     .balance{font-size: 25rpx;}
+	 .balance .balance-text{ color:#027fff;} 
+    .payment{align-items: end;}
+	.payment .payment-icon{ margin-right:20rpx; width: 30rpx;height:30rpx;}
+	
+	.wallet .discount .discount {font-size:26rpx;}
     .wallet .discount .discount uni-radio{font-size:26rpx;}
     .wallet .discount .discount-right-text{ font-size:26rpx; color:#999999;}
     .wallet .submit{position: relative; text-align: center; margin: 0 auto; padding: 0; width: 640rpx; height: 110rpx;}

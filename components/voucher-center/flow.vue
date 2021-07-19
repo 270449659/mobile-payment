@@ -5,7 +5,7 @@
 		<view class="charge-rate uni-flex"> 
 		   <view class="charge-rate-box uni-flex"> 
 			   <text class="charge-rate-title mgr20"> 充流量号码:</text>				
-			   <input type="text" name="chargeRateNumber" class="charge-rate-input" v-model="chargeRateNumber" placeholder="请输入ICCID或接入卡号" />
+			   <input type="number" name="chargeRateNumber" @input="onKeyInput" maxlength="11" class="charge-rate-input" v-model="chargeRateNumber" placeholder="请输入ICCID或接入卡号" />
 			  <image  @click="GetinputDelete" class="input-delete-icon mgl10" src="/static/images/voucherCenter/input-delete-icon.png"></image> 
 			</view>
 			<view class="flex-align-items-center mail-list">
@@ -48,18 +48,17 @@
 				<image class="mgl20" src="/static/images/voucherCenter/question-mark-icon.png"></image>
 			</view>
 			<view class="monthly-package-list uni-flex">
-				<view class="monthly-package-item flex-justify-content-center">
+				<view @click="monthlyPackage(1)" class="monthly-package-item flex-justify-content-center">
 					<image src="/static/images/voucherCenter/monthly-package-icon.png"></image> 
 					<text>50M</text>
 					<text class="monthly-package-item-text">5.00元</text>	
 				</view>
-				<view class="monthly-package-item flex-justify-content-center">
+				<view @click="monthlyPackage(2)" class="monthly-package-item flex-justify-content-center">
 					<image src="/static/images/voucherCenter/monthly-package-icon.png"></image> 
 					<text>100M</text>
 					<text class="monthly-package-item-text">10.00元</text>	
 				</view>
-				<view class="monthly-package-item flex-justify-content-center">
-					
+				<view @click="monthlyPackage(3)" class="monthly-package-item flex-justify-content-center">
 					<image src="/static/images/voucherCenter/monthly-package-icon.png"></image> 
 					<text>1G</text>
 					<text class="monthly-package-item-text">20.00元</text>	
@@ -77,34 +76,34 @@
 				<image class="mgl20" src="/static/images/voucherCenter/question-mark-icon.png"></image>
 			</view>
 			<view class="monthly-package-list  uni-flex">
-				<view class="monthly-package-item flex-justify-content-center">
+				<view @click="monthlyPackage(4)" class="monthly-package-item flex-justify-content-center">
 					<image  src="/static/images/voucherCenter/superposition-icon.png"></image>
 					<text>50M</text>
 					<text class="monthly-package-item-text">5.00元</text>	
 				</view>
-				<view class="monthly-package-item flex-justify-content-center">
+				<view @click="monthlyPackage(5)" class="monthly-package-item flex-justify-content-center">
 					<image  src="/static/images/voucherCenter/superposition-icon.png"></image>
 					<text>100M</text>
 					<text class="monthly-package-item-text">10.00元</text>	
 				</view>
-				<view class="monthly-package-item flex-justify-content-center">
+				<view @click="monthlyPackage(6)" class="monthly-package-item flex-justify-content-center">
 					<image  src="/static/images/voucherCenter/superposition-icon.png"></image>
 					<text>1G</text>
 					<text class="monthly-package-item-text">20.00元</text>	
 				</view>
 			</view>
 		</view>
-		<view class="discount mgt50 flex-justify-content-s-b">
+		<!-- <view class="discount mgt50 flex-justify-content-s-b">
 			<label class="radio"><radio value="r1" checked="true" />优惠</label>
 			<view class="discount-right-text">无可用</view>
-		</view>
+		</view> -->
 		<!-- 加油包 end-->
 		
-		 <view  @click="goProductAttr" class="submit mgt50">
+		<!-- <view  @click="goProductAttr" class="submit mgt50">
 			 <text class="">￥10.00立刻支付</text>
 			  <image  v-if="completed==true" class="bnt-background" src="/static/images/voucherCenter/bnt-background-true-icon.png"></image> 
 			  <image  v-else class="bnt-background" src="/static/images/voucherCenter/bnt-background-icon.png"></image>
-		 </view>
+		 </view> -->
 		</form>
 		<!-- 订购弹框 -->
 		<uni-popup ref="popup" type="bottom">
@@ -153,6 +152,7 @@
 </template>
 
 <script>
+	var graceChecker = require("@/common/graceChecker.js");
 	import uniPopup from '@/components/uni-popup/components/uni-popup/uni-popup.vue'
 	//import productAttrModal from '@/components/product-attr-modal/index.vue'
 	
@@ -163,15 +163,18 @@ export default{
 	// props:['datas'],
 	data(){
 		return {
-			chargeRateNumber:null,
+			chargeRateNumber:'',
 			hotIcon:true,
 			completed:false,//已填为true
+			inputValue:null//监听号码
+			
 		}
 	},
 	onLoad() {
 		//this.goProductAttr()
 	},
 	methods:{
+		    
 			//输入框删除
 			GetinputDelete(){
 				this.chargeRateNumber='';
@@ -181,15 +184,14 @@ export default{
 			
 			goProductAttr(e) {  
                // console.log(e)  
+			   
 			   if(this.chargeRateNumber){
 				   this.completed=true;
 				   console.log('22',this.completed)  
 				   this.$refs.popup.open('bottom')
 			   }else{
 				   this.completed=false;
-			   }
-                
-				
+			   }	
 				//this.productAttrModalState=true;
 				//
 			},
@@ -200,8 +202,46 @@ export default{
 			// 关闭弹框-end
 			GetOrderSubmit(){
 				this.$refs.popup.close()
+			},
+			//监听号码
+			 onKeyInput: function(event) {
+			   //console.log(event)  
+			    this.inputValue = event.target.value
+			 },
+			 //监听号码
+			 
+			// 确定
+			monthlyPackage(key){
+				var rule_Verify = [
+					{name:"mobile", checkType : "notnull", checkRule:" ",  errorMsg:"手机号码不能为空"},
+					{name:"mobile", checkType : "phoneno", checkRule:" ",  errorMsg:"手机号码不正确"},
+					
+				];
+				// 			var formData = this.chargeRateNumber;
+				// 			let checkRes = graceChecker.check(formData, rule_Verify);
+				// 			 if(checkRes){
+				// 			 }else{
+
+				// 				uni.showToast({ title: graceChecker.error, icon: "none" });
+				// 			}
+	            //console.log(this.inputValue)
+				if(this.inputValue){
+				   if(this.inputValue.length<11){
+					   uni.showToast({
+							title: '请输入11位码号',
+							duration: 1000
+						});
+				   }else{
+					 this.$refs.popup.open('bottom')				  
+				   }
+			    }else{
+					uni.showToast({
+						title: '手机号码不能为空',
+						duration: 1000
+					});
+				}
 			}
-			
+			// 确定-end
 	},		
 }
 </script>

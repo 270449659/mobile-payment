@@ -25,16 +25,11 @@
 			}
 		},
 		{
-			"name" : "card-information", //模式名称
-			"path" : "pages/user/card-information", //启动页面，必选
-			"query" : "" ,//启动参数，在页面的onLoad函数里面得到。
-			"style" : {
-				"navigationBarTitleText" : "卡片信息",
-				"app-plus" : {
-					"titleNView" : false
-					
-				},
-				"enablePullDownRefresh": true
+			"path": "pages/user/card-information",
+			"style": {
+				"navigationBarBackgroundColor":"#3e7cf3",
+				"navigationBarTitleText": "卡片信息",
+				"navigationBarTextStyle":"white"  //状态栏字体颜色
 			}
 		},
 		{

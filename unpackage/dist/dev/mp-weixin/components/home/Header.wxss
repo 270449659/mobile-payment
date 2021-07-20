@@ -1,0 +1,73 @@
+
+.header{
+		z-index: 100;
+		width: 100%;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-orient: unset;
+		-webkit-box-direction: unset;
+		-webkit-flex-direction: unset;
+		        flex-direction: unset;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		        align-items: center;
+		-webkit-box-pack:justify;
+		-webkit-justify-content:space-between;
+		        justify-content:space-between;
+		height: 116rpx !important; 
+		-webkit-box-sizing: border-box; 
+		        box-sizing: border-box;
+		border-bottom:none!important;
+		background-color: #0d92df!important;
+		-webkit-box-shadow:none !important;
+		        box-shadow:none !important;
+		/* box-shadow: rgba(0, 0, 0, .05) 0 1px 3px; */
+}
+.fixed-top {
+		position: fixed !important;
+		top: 0 !important;
+		bottom: auto !important;
+}
+.search {
+		width: 560rpx;
+		position: relative;
+		height: 60rpx;
+		margin: 28rpx 0 28rpx 25rpx;
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box;
+		overflow: hidden;
+		background-color: #58B3EA;
+		border-radius: 34rpx;
+}
+.search .search-icon {
+		position: absolute;
+		top: 6rpx;
+		left: 12rpx;
+		display: block;
+		width:48rpx;
+		height: 48rpx;
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box;
+		overflow: hidden;
+}
+.search .search-text {
+		display: block;
+		width: 100%;
+		height: 60rpx;
+		margin: 0 auto;
+		padding-left: 76rpx;
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box;
+		overflow: hidden;
+		color: #ffff;
+		font-size: 28rpx;
+		font-weight: normal;
+		line-height: 60rpx;
+}
+.header-right{display: -webkit-box;display: -webkit-flex;display: flex; margin: 0 25rpx 0 0; -webkit-box-orient: unset; -webkit-box-direction: unset; -webkit-flex-direction: unset; flex-direction: unset; -webkit-box-align: center; -webkit-align-items: center; align-items: center;}
+.news{width: 46rpx; height: 46rpx;margin: 0 25rpx;}
+.news .news-icon{width:100%; height:100%;}
+.multi-function{display: -webkit-box;display: -webkit-flex;display: flex; width: 43rpx; height: 11rpx;}
+.multi-function .multi-function-icon{width:100%; height:100%;}
+

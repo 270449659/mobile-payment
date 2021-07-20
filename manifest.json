@@ -50,12 +50,15 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "touristappid",
+        "appid" : "wxe62ad8e92f037b2a",
         "setting" : {
-            "urlCheck" : false,
-            "postcss" : true
+            "urlCheck" : true,
+            "postcss" : true,
+            "es6" : true,
+            "minified" : true
         },
-        "usingComponents" : true
+        "usingComponents" : true,
+        "permission" : {}
     },
     "mp-alipay" : {
         "usingComponents" : true

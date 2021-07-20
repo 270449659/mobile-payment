@@ -1,0 +1,8 @@
+{
+  "navigationBarBackgroundColor": "#3e7cf3",
+  "navigationBarTitleText": "卡片信息",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "user-menu": "/components/user/UserMenu"
+  }
+}

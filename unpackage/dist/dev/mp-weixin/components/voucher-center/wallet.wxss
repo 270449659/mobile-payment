@@ -1,0 +1,67 @@
+
+.wallet .charge-rate{ -webkit-box-align:center; -webkit-align-items:center; align-items:center;-webkit-box-pack: justify;-webkit-justify-content: space-between;justify-content: space-between; border-bottom: 1px solid #c9c9c9;}
+.wallet .charge-rate-box{ padding-bottom:35rpx;  -webkit-box-orient: vertical;  -webkit-box-direction: normal;  -webkit-flex-direction: column;  flex-direction: column;}
+.wallet .charge-rate-box-list {-webkit-box-align: center;-webkit-align-items: center;align-items: center; margin-bottom: 10rpx;}
+.wallet .charge-rate-box-list .uni-input-placeholder{color:#c9c9c9;}
+.wallet .charge-rate-box .input-delete-icon{  
+		width: 33rpx;
+	    height: 34rpx;
+}
+.wallet .charge-rate .charge-rate-explain{
+	 font-size: 24rpx;
+	 	color:#c9c9c9;
+}
+.wallet .charge-rate .charge-rate-input{
+	  height: 46rpx;
+	 font-size: 30rpx;
+}
+.wallet .charge-rate .mail-list{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;flex-direction:column; margin-left:32rpx;
+}
+.wallet .charge-rate .mail-list .mail-list-text{
+		color:#189ce7;
+		font-size: 13rpx;
+}
+.wallet .charge-rate .charge-rate-icon{
+       margin-right: 5px;
+}
+.wallet .charge-rate .mail-list image{
+		width:29rpx;
+		height: 33rpx;
+		line-height: 33rpx;
+}
+.wallet .charge-balance{}
+.wallet .charge-balance .charge-balance-title{margin-bottom: 28rpx;}
+.charge-balance .charge-balance-title .title-vertical{width: 9rpx; height: 33rpx; background:#ff6711; border-radius: 20rpx;}
+.charge-balance .charge-balance-title text{line-height:30rpx; font-size: 30rpx; color: #333333;}
+.charge-balance .charge-balance-title text.charge-balance-title-text-explain{line-height:20rpx;color: #9b9b9b; font-size: 20rpx;}
+.charge-balance .charge-balance-title image{
+		width:29rpx;
+		height: 28rpx;
+}
+.charge-balance .charge-balance-list{-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;}
+.charge-balance .charge-balance-item{position: relative; width: 218rpx; border: 1px solid #e8e8e8; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; flex-direction: column; padding: 30rpx 0;  border-radius: 15rpx;
+}
+.charge-balance .charge-balance-item.active{  border: 1px solid #41bafe;}
+.charge-balance .charge-balance-item image{
+		position: absolute; bottom: 0; right: 0;
+		width:32rpx;
+		height: 32rpx;
+		border-radius: 0 0 10rpx 0 ;
+}
+.charge-balance .charge-balance-item text{ text-align: center; font-size: 26rpx; line-height:26rpx;
+}
+.charge-balance .charge-balance-item text.charge-balance-item-text{margin-top:20rpx; color:#949494; font-size:20rpx; line-height:20rpx;
+}
+.balance{font-size: 25rpx;}
+.balance .balance-text{ color:#027fff;}
+.payment{-webkit-box-align: end;-webkit-align-items: end;align-items: end;}
+.payment .payment-icon{ margin-right:20rpx; width: 30rpx;height:30rpx;}
+.wallet .payment .payment-title{ font-size: 32rpx;}
+.wallet .discount .discount {font-size:26rpx;}
+.wallet .discount .discount uni-radio{font-size:26rpx;}
+.wallet .discount .discount-right-text{ font-size:26rpx; color:#999999;}
+.wallet .submit{position: relative; text-align: center; margin: 0 auto; padding: 0; width: 640rpx; height: 110rpx;}
+.wallet .submit text{position: relative; z-index: 1; top:15rpx; font-size: 25rpx; height: 25rpx; line-height: 25rpx; color: #FFFFFF;
+}
+.wallet .submit .bnt-background{position: absolute;  top: 0; left: 0; z-index: 0; width: 640rpx; height: 110rpx;}
+

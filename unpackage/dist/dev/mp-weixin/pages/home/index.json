@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "首页",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "header": "/components/home/Header",
+    "banner": "/components/home/Banner",
+    "menu": "/components/home/Menu",
+    "advertisement": "/components/home/Advertisement",
+    "balance": "/components/home/Balance",
+    "information": "/components/home/Information",
+    "hot-events": "/components/home/HotEvents",
+    "video": "/components/home/Video"
+  }
+}

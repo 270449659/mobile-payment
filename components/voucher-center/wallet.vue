@@ -1,34 +1,42 @@
 <template>
 	<!-- 钱包 -->
 	<view class="wallet">
-		<!--充流量号码-->
+		<!--充钱包号码-->
 		<view class="charge-rate uni-flex"> 
-		   <view class="charge-rate-box uni-flex"> 
-			   <text class="charge-rate-title mgr20"> 充流量号码:</text>				
-			   <input type="text" name="chargeRateNumber" @input="onKeyInput" maxlength="30" class="charge-rate-input" v-model="chargeRateNumber" placeholder="请输入ICCID或接入卡号" />
-			  <image  @click="GetinputDelete" class="input-delete-icon mgl10" src="/static/images/voucherCenter/input-delete-icon.png"></image> 
+		   <view class="charge-rate-box uni-flex">   
+			    <view class="charge-rate-box-list uni-flex">   	   
+				  <input type="number" name="chargeRateNumber" @input="onKeyInput" maxlength="30" class="charge-rate-input" v-model="chargeRateNumber" placeholder="请输入ICCID或接入卡号" />
+				  <image  @click="GetinputDelete" class="input-delete-icon mgl10" src="/static/images/voucherCenter/input-delete-icon.png"></image> 
+			    </view>
+			    <view class="charge-rate-explain"> 仅支持钱包账户充值</view>	
 			</view>
-			<view class="flex-align-items-center mail-list">
-				<image src="/static/images/voucherCenter/mail-list-icon.png"></image> 
-				<text class="mail-list-text">通讯录</text>		
-			</view>
+			<view class="rights uni-flex">  
+				<view class="flex-align-items-center mail-list">
+					<image src="/static/images/voucherCenter/mail-list-icon.png"></image> 
+					<text class="mail-list-text">家人充</text>		
+				</view>
+				<view class="flex-align-items-center mail-list">
+					<image src="/static/images/voucherCenter/mail-list-icon.png"></image> 
+					<text class="mail-list-text">他人充</text>		
+				</view>
+			</view> 	
 		</view> 
-		<!--充流量号码end-->
+		<!--充钱包号码end-->
 		<!-- 充余额-->
 		<view class="charge-balance superposition mgt50">
 			<view class="flex-align-items-center charge-balance-title">
 				<text class="charge-balance-title-text mgl20">充余额</text>
 			</view>
 			<view class="charge-balance-list  uni-flex"> 
-				<view @click="chargeBalance(1)" class="charge-balance-item flex-justify-content-center">
+				<view @click="chargeBalance(1)" v-bind:class="active==1 ? 'active' : ''" class="charge-balance-item flex-justify-content-center">
 					<image v-if="active==1" src="/static/images/voucherCenter/choice-icon.png"></image>
 					<text>10元</text>	
 				</view>
-				<view @click="chargeBalance(2)" class="charge-balance-item flex-justify-content-center">
+				<view @click="chargeBalance(2)" v-bind:class="active==2 ? 'active' : ''" class="charge-balance-item flex-justify-content-center">
 					<image v-if="active==2" src="/static/images/voucherCenter/choice-icon.png"></image>
 					<text>30元</text>		
 				</view>
-				<view @click="chargeBalance(3)" class="charge-balance-item flex-justify-content-center">	
+				<view @click="chargeBalance(3)" v-bind:class="active==3 ? 'active' : ''" class="charge-balance-item flex-justify-content-center">	
 				<image v-if="active==3" src="/static/images/voucherCenter/choice-icon.png"></image>
 					<text>50元</text>	
 				</view>
@@ -39,12 +47,10 @@
 		</view>
 		<!-- 充余额 end-->
 		<view class="payment mgt50 pdb30">
-			<view class=""> 
-			     <view class="flex-justify-content-s-b"><view class=""><image class="payment-icon" src="/static/images/user/WeChat-icon.png"></image>微信</view><label class="radio"><radio value="r1" checked="true" /></label></view>
-			    <view class="flex-justify-content-s-b"> <view class=""><image class="payment-icon" src="/static/images/user/Alipay-icon.png"></image>支付宝</view><label class="radio"><radio value="r1" checked="true" /></label></view>
-			    <view class="flex-justify-content-s-b"> <view class=""> <image class="payment-icon" src="/static/images/user/balance-icon.png"></image>钱包</view><label class="radio"><radio value="r1" checked="true" /></label></view>
-			    <view class="flex-justify-content-s-b"> <view class=""><image class="payment-icon" src="/static/images/user/balance-icon.png"></image>银联</view><label class="radio"><radio value="r1" checked="true" /></label></view>
-			</view>
+			     <view class="flex-justify-content-s-b mgb40"><view class="payment-title"><image class="payment-icon" src="/static/images/user/WeChat-icon.png"></image>微信</view><label class="radio"><radio value="r1" checked="true" /></label></view>
+			    <view class="flex-justify-content-s-b mgb40"> <view class="payment-title"><image class="payment-icon" src="/static/images/user/Alipay-icon.png"></image>支付宝</view><label class="radio"><radio value="r1" checked="true" /></label></view>
+			    <view class="flex-justify-content-s-b mgb40"> <view class="payment-title"> <image class="payment-icon" src="/static/images/user/balance-icon.png"></image>钱包</view><label class="radio"><radio value="r1" checked="true" /></label></view>
+			    <view class="flex-justify-content-s-b "> <view class="payment-title"><image class="payment-icon" src="/static/images/user/balance-icon.png"></image>银联</view><label class="radio"><radio value="r1" checked="true" /></label></view>
 		</view>
 		<view class="discount mgt50 flex-justify-content-s-b">
 			<label class="radio"><radio value="r1" checked="true" />优惠</label>
@@ -74,6 +80,12 @@
 
 		},
 		methods: {
+			//输入框删除
+			GetinputDelete(){
+				this.chargeRateNumber='';
+			},
+			//输入框删除-end
+			
 			//监听号码
 			 onKeyInput: function(event) {
 			   console.log(event)  
@@ -102,38 +114,39 @@
 </script>
 
 <style>
-	.charge-rate{ align-items: flex-end;justify-content: flex-end;}
-	.charge-rate-box .input-delete-icon{  
-		
+	.wallet .charge-rate{ align-items:center;justify-content: space-between; border-bottom: 1px solid #c9c9c9;}
+	.wallet .charge-rate-box{ padding-bottom:35rpx;  flex-direction: column;}
+	.wallet .charge-rate-box-list {align-items: center; margin-bottom: 10rpx;}
+	.wallet .charge-rate-box-list .uni-input-placeholder{color:#c9c9c9;}
+	.wallet .charge-rate-box .input-delete-icon{  
 		width: 33rpx;
 	    height: 34rpx;
+	
 		}
-	.charge-rate .charge-rate-title{
+	.wallet .charge-rate .charge-rate-explain{
 	 font-size: 24rpx;
+	 	color:#c9c9c9;
 	}
-	.charge-rate .charge-rate-input{
-	  border-bottom: 1px solid #262626;
-	  height: 46ppx;
+	.wallet .charge-rate .charge-rate-input{
+	  height: 46rpx;
 	 font-size: 30rpx;
 	 
 	}
-	.charge-rate .mail-list{flex-direction:column; margin-left:32rpx; }
-	.charge-rate .mail-list .mail-list-text{
+	.wallet .charge-rate .mail-list{flex-direction:column; margin-left:32rpx; }
+	.wallet .charge-rate .mail-list .mail-list-text{
 		color:#189ce7;
 		font-size: 13rpx;
 	}
-	.charge-rate .charge-rate-icon{
-		
-		margin-right: 5px;
+	.wallet .charge-rate .charge-rate-icon{
+       margin-right: 5px;
 	}
-	
-	.charge-rate .mail-list image{
+	.wallet .charge-rate .mail-list image{
 		width:29rpx;
 		height: 33rpx;
 		line-height: 33rpx;
 	}
-	.charge-balance{}
-	.charge-balance .charge-balance-title{margin-bottom: 28rpx;}
+	.wallet .charge-balance{}
+	.wallet .charge-balance .charge-balance-title{margin-bottom: 28rpx;}
 	.charge-balance .charge-balance-title .title-vertical{width: 9rpx; height: 33rpx; background:#ff6711; border-radius: 20rpx;}
 	.charge-balance .charge-balance-title text{line-height:30rpx; font-size: 30rpx; color: #333333;}
 	.charge-balance .charge-balance-title text.charge-balance-title-text-explain{line-height:20rpx;color: #9b9b9b; font-size: 20rpx;}
@@ -143,7 +156,7 @@
 		}
 	.charge-balance .charge-balance-list{justify-content:space-between;}
 	.charge-balance .charge-balance-item{position: relative; width: 218rpx; border: 1px solid #e8e8e8; flex-direction: column; padding: 30rpx 0;  border-radius: 15rpx;   }
-		
+	.charge-balance .charge-balance-item.active{  border: 1px solid #41bafe;}
 	.charge-balance .charge-balance-item image{
 		position: absolute; bottom: 0; right: 0;
 		width:32rpx;
@@ -157,7 +170,7 @@
 	 .balance .balance-text{ color:#027fff;} 
     .payment{align-items: end;}
 	.payment .payment-icon{ margin-right:20rpx; width: 30rpx;height:30rpx;}
-	
+	.wallet .payment .payment-title{ font-size: 32rpx;}
 	.wallet .discount .discount {font-size:26rpx;}
     .wallet .discount .discount uni-radio{font-size:26rpx;}
     .wallet .discount .discount-right-text{ font-size:26rpx; color:#999999;}

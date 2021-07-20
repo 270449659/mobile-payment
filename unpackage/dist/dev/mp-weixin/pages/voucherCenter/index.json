@@ -1,0 +1,9 @@
+{
+  "navigationBarBackgroundColor": "#03b7e0",
+  "navigationBarTitleText": "充值中心",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "wallet": "/components/voucher-center/wallet",
+    "flow": "/components/voucher-center/flow"
+  }
+}

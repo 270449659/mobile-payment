@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/home/index",
+    "pages/user/user",
+    "pages/user/card-information",
+    "pages/query/index",
+    "pages/customerService/customerServiceIndex",
+    "pages/voucherCenter/index",
+    "pages/login/login",
+    "pages/index/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#656565",
+    "selectedColor": "#029ffe",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "iconPath": "static/images/tabBar/home-cur.png",
+        "selectedIconPath": "static/images/tabBar/home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/query/index",
+        "iconPath": "static/images/tabBar/query-cur.png",
+        "selectedIconPath": "static/images/tabBar/query.png",
+        "text": "查询"
+      },
+      {
+        "pagePath": "pages/customerService/customerServiceIndex",
+        "iconPath": "static/images/tabBar/query-cur.png",
+        "selectedIconPath": "static/images/tabBar/query.png",
+        "text": "客服"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "static/images/tabBar/user.png",
+        "selectedIconPath": "static/images/tabBar/user-cur.png",
+        "text": "我"
+      }
+    ]
+  },
+  "permission": {},
+  "usingComponents": {}
+}

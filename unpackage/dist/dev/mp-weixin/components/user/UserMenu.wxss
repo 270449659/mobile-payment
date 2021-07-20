@@ -1,0 +1,44 @@
+
+.user-menu {
+	position: relative;
+	display: block;
+
+	background-color: #FFF;
+	overflow: hidden;
+	padding:30rpx 0 23rpx 0;
+	border-radius: 25rpx;
+	/* border-bottom: #e2e2e2 1px solid; */
+}
+.user-menu .menu-item {
+	    position: relative;
+	    float: left;
+	    display: block;
+	    width: 25%;
+	    border: none;
+	    -webkit-box-sizing: border-box;
+	            box-sizing: border-box;
+	    padding: 22rpx 0;
+}
+.user-menu .menu-item .item-icon {
+	    display: block;
+	    width: 68rpx;
+	    height: 68rpx;
+	    margin: 0 auto;
+	    overflow: hidden;
+}
+.user-menu .menu-item .item-text {
+	    display: block;
+	    width: 100%;
+	    height: 24rpx;
+	    line-height: 24rpx;
+	    -webkit-box-sizing: border-box;
+	            box-sizing: border-box;
+	    border: none;
+	    overflow: hidden;
+	    color: #404245;
+	    font-size: 24rpx;
+	    font-weight: normal;
+	    text-align: center;
+	    margin-top: 22rpx;
+}
+

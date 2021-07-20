@@ -1,0 +1,266 @@
+
+page{
+	/* background:/static/pwd-show-icon.png; */
+	/* /background-color:#fff; */
+}
+.login{}
+.bg-set{
+	    position: fixed;
+		background-size:cover !important;
+	    width: 100%;
+	    height: 100%;
+	    top: 0;
+	    left: 0;
+	    z-index: -1;
+}
+.content {
+		/* display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center; */
+}
+.auth-layout {
+	    padding:0 48rpx 0 48rpx;
+}
+	/* 头部 */
+.auth-panel{
+	    -webkit-box-orient:  vertical;
+	    -webkit-box-direction:  normal;
+	    -webkit-flex-direction:  column;
+	            flex-direction:  column;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		        justify-content: center;
+    	-webkit-box-align: center;
+    	-webkit-align-items: center;
+    	        align-items: center; 
+		-webkit-box-sizing:content-box; 
+		        box-sizing:content-box
+}
+.logo {
+		width:301rpx;
+		height: 144rpx;
+		margin:88rpx 0 0 0;
+}
+.auth-panel .title{
+		margin:68rpx 0 35rpx 0;
+		height:51rpx;
+		font-size:50rpx;
+		font-family:PingFang SC;
+		font-weight:500;
+		color:#ffff;
+		line-height:39rpx;
+}
+.auth-panel .title-explain{
+		 height:24rpx;
+		 font-size:25rpx;
+		 font-family:PingFang SC;
+		 font-weight:500;
+		 color:rgba(153,153,153,1);
+		 line-height:39rpx;
+}
+	/* 头部 end*/
+	/* 内容*/
+.form-warrap{
+}
+.item-input{
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		        align-items: center;	
+		padding: 34rpx 0 34rpx 30rpx;
+		border-radius: 50rpx;
+		background: #fff;
+}
+.uni-input-placeholder {
+	    color:#c0c0c0;
+}
+.item-input .item-input label{ width: 200rpx; height: 1.4rem; line-height: 1.4rem;
+}
+.item-input.userName{margin-bottom:26rpx;}
+.item-input uni-input{
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-flex: 1;
+		-webkit-flex: 1;
+		        flex: 1;
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box;
+		width: 100%;
+	 	height:25rpx;
+		box-sizing: border-box;
+	 	font-size:24rpx;
+	 	font-family:PingFang SC;
+	 	font-weight:500;
+	 	color:#c0c0c0;
+	 	line-height:25rpx;
+}
+.item-input .pwdinput{
+	 	height:25rpx;
+	 	font-size:24rpx;
+	 	font-family:PingFang SC;
+	 	font-weight:500;
+	 	color:#c0c0c0;
+	 	line-height:25rpx;
+}
+.item-input .userName-icon{
+		 display: block;
+		 width:17rpx ;
+		 height: 24rpx;
+		 line-height:24rpx;
+		 margin-right:14rpx;
+}
+.item-input .userName-icon image{
+	 	 width: 100%;
+	 	 height:100%;
+	 	 margin:0;
+}
+	/* 密码*/
+.item-input.password{
+		/* padding-left:140rpx; */
+		-webkit-box-pack:justify;
+		-webkit-justify-content:space-between;
+		        justify-content:space-between;
+}
+.item-input.password .pwdinput{
+		border: none;	
+		outline:none;
+		color:#c0c0c0;
+}
+input::-webkit-input-placeholder {
+	  color: #fff !important;
+	  font-size: 16px;
+}
+.item-input.password .password-icon{
+		display: block;
+		width:23rpx;
+		height: 27rpx;
+		line-height:27rpx;
+		margin-right:14rpx;
+}
+.item-input.password .password-icon image{
+		 width: 100%;
+		 height:100%;
+		 margin:0;
+}
+.item-input .passwordCodeBtn .passwordBtn{
+		 display: block;
+		 width: 35rpx;
+		 height: 26rpx;
+		 line-height:26rpx;	
+		 padding:0 25rpx 0 15rpx;
+}
+.item-input .passwordCodeBtn .passwordBtn image{
+	 	 width: 100%;
+	 	 height:100%;
+	 	 margin:0;
+}
+	/* 密码 end*/
+	/* 验证码 */
+.item-input.verification{
+	 	/* padding-left:140rpx; */
+	 	 -webkit-box-pack:justify;
+	 	 -webkit-justify-content:space-between;
+	 	         justify-content:space-between;
+}
+.item-input .verifiCodeBtn{
+	 	/* height: 44rpx; */
+}
+.item-input .verifiCodeBtn .verifiBtn{
+	 	 display: block;
+	 	 font-size:25rpx;
+	 	 line-height:25rpx;	
+	 	 color: #F53120;
+		 margin-right: 30rpx;
+	 	/* padding:10rpx 20rpx 10rpx 20rpx;
+	 	 border:2rpx solid #F53120;
+	 	 border-radius:50rpx; */
+}
+	/* 验证码 end*/
+.tips-register{
+		  -webkit-box-pack: justify;
+		  -webkit-justify-content: space-between;
+		          justify-content: space-between;
+}
+.tips{
+	 		 height:25rpx;
+	 		 line-height:25rpx;
+	 		 font-size:25rpx;
+	 		 font-family:PingFang SC;
+	 		 font-weight:500;
+	 		 color:#fff;
+	 		 margin-top:18rpx;
+}
+	/* 提交按钮 */
+.btn-bar .btn-register{
+		 margin-top:45rpx;
+}
+.btn-register{
+		 line-height:90rpx;
+		 height:90rpx;
+		 color: #FFFFFF;
+		 background:#2397e5;
+		/* background:linear-gradient(90deg,rgba(244,46,20,1),rgba(246,44,67,1),rgba(241,130,0,1)); */
+		 border-radius:50rpx;
+}
+	/* 提交按钮 end*/
+	/* 底部说明 */
+.explain{
+		 margin-top:32rpx;
+		 font-size:25rpx;
+		 height:25rpx;
+		 line-height:25rpx;
+		 font-family:PingFang SC;
+		 font-weight:500;
+		 color:#999999;
+}
+.explain.explain-two{margin-top:16rpx;}
+.explain text{
+		 color: #F42E14;
+}
+	/* 底部说明 end*/
+	/* 其他登录 */
+.other-login {
+		  -webkit-box-align: center;
+		  -webkit-align-items: center;
+		          align-items: center;
+		  -webkit-box-orient: vertical;
+		  -webkit-box-direction: normal;
+		  -webkit-flex-direction: column;
+		          flex-direction: column;
+		  margin-top:50rpx;
+}
+.other-login .other-login-title{
+		  height:26rpx;
+		  font-size:25rpx;
+		  font-family:PingFang SC;
+		  font-weight:500;
+		  color:#ffff;
+}
+.other-login .other-login-con {
+		   position:relative;
+		   -webkit-box-pack:center;
+		   -webkit-justify-content:center;
+		           justify-content:center;
+		   margin: 30rpx 20rpx;
+}
+.other-login .other-login-con image{
+		  width: 60rpx;
+		  height:60rpx;
+		  margin:0;
+}
+.other-login-words{
+		    margin-top:17rpx;	 
+		   height:25rpx;
+		   font-size:25rpx;
+		   font-family:PingFang SC;
+		   font-weight:500;
+		   color:rgba(26,26,26,1);
+		  text-align: center;
+}
+	/* 其他登录 end*/
+	/* 内容 end*/
+

@@ -41,6 +41,15 @@
 			}
 		},
 		{
+			"path": "pages/customerService/customerServiceIndex",
+			"style": {
+				"navigationBarBackgroundColor":"#03b7e0",
+				"navigationBarTitleText": "在线客服",
+				"navigationBarTextStyle":"white"  //状态栏字体颜色
+			}
+		},
+		
+		{
 			"path": "pages/voucherCenter/index",
 			"style": {
 				"navigationBarBackgroundColor":"#03b7e0",
@@ -89,9 +98,9 @@
 				"text" : "查询"
 			},
 			{
-				//"pagePath" : "pages/category/categoryIndex",
-				//"iconPath" : "static/tabBar/user.png",
-			   // "selectedIconPath" : "static/tabBar/user-cur.png",
+				"pagePath" : "pages/customerService/customerServiceIndex",
+				"iconPath" : "static/images/tabBar/query-cur.png",
+				"selectedIconPath" : "static/images/tabBar/query.png",
 				"text" : "客服"
 			},
 			{

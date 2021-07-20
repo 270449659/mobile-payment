@@ -35,6 +35,7 @@
 	.mgr20{margin-right:20rpx!important;}
 	.mgb20{margin-bottom: 20rpx !important;}
 	.mgb25{margin-bottom: 25rpx !important;}
+	.mgb40{margin-bottom: 40rpx !important;}
 	.mglr30{margin-left: 30rpx!important;margin-right:30rpx!important;}
 	.mglr45{margin-left: 45rpx!important;margin-right:45rpx!important;}
 	.pdb30{padding-bottom: 30rpx !important;}
@@ -56,4 +57,5 @@
 	}
 	.order uni-label{font-size:28rpx;}
 	.order uni-radio{margin-left:30rpx}
+	
 </style>

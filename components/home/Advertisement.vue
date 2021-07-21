@@ -1,6 +1,6 @@
 <template>
 	<view class="advertisement">
-		<img class="advertisement-img" src="/static/images/home/advertisement-icon.png">
+		<image class="advertisement-img" src="http://uniapp.atongweb.com/images/home/advertisement-icon.png"></image>
 	</view>
 </template>
 

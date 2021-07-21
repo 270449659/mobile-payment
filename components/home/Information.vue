@@ -14,7 +14,7 @@
 		</view>	
 		<!-- information-left end-->
 		<view class="nav-right">
-			<img class="news-icon" src="/static/images/home/nav-right.png">
+			<image class="news-icon" src="/static/images/home/nav-right.png"></image>
 		</view>
 	  </view>	
 	</view>	

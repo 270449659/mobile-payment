@@ -13,7 +13,10 @@
 </script>
 
 <style>
-	video {width: 100%}
+	.fixed-top{position: fixed !important;
+    top: 0 !important;
+    bottom: auto !important;
+    }
 	.uni-block{display: block;}
 	.uni-flex{display: flex;}
 	.flex-warp{display: flex; flex-wrap: wrap;}
@@ -57,5 +60,5 @@
 	}
 	.order uni-label{font-size:28rpx;}
 	.order uni-radio{margin-left:30rpx}
-	
+	 video {width: 100%}
 </style>

@@ -135,7 +135,7 @@
 					    <view class=""><image class="payment-icon" src="/static/images/user/WeChat-icon.png"></image><label class="radio">微信<radio value="r1" checked="true" /></label></view>
 					    <view class=""><image class="payment-icon" src="/static/images/user/Alipay-icon.png"></image><label class="radio">支付宝<radio value="r1" checked="true" /></label></view>
 					    <view class=""><image class="payment-icon" src="/static/images/user/balance-icon.png"></image><label class="radio">钱包<radio value="r1" checked="true" /></label></view>
-					    <view class=""><image class="payment-icon" src="/static/images/user/balance-icon.png"></image><label class="radio">银联<radio value="r1" checked="true" /></label></view>
+					    <view class=""><image class="payment-icon" src="/static/images/user/unionPay-icon.png"></image><label class="radio">银联<radio value="r1" checked="true" /></label></view>
 					</view>
 				</view>
 				<view @click="GetOrderSubmit" class="order-submit mgt50">

@@ -1,22 +1,21 @@
 <template>
 	<view class="Hot-events">
 		<view class="uni-flex Hot-events-header">
-			<view class="uni-flex Hot-events-header-tltle"><text class="Hot-events-header-tltle-text">热门活动</text> <img class="Hot-events-header-tltle-icon" src="/static/images/home/Hot-title-icon.png"/></view>
-		    <view class="uni-flex Hot-events-header-more"><text class="Hot-events-header-more-text">更多</text> <img class="Hot-events-header-more-icon" src="/static/images/home/Hot-more-icon.png"/></view>
+			<view class="uni-flex Hot-events-header-tltle"><text class="Hot-events-header-tltle-text">热门活动</text> <image class="Hot-events-header-tltle-icon" src="/static/images/home/Hot-title-icon.png"></image></view>
+		    <view class="uni-flex Hot-events-header-more"><text class="Hot-events-header-more-text">更多</text> <image class="Hot-events-header-more-icon" src="/static/images/home/Hot-more-icon.png"></image></view>
 		</view>
 		<view class="uni-flex Hot-events-list">
 			<view class="uni-flex Hot-events-item">
-				<img class="Hot-events-header-more-icon" src="/static/images/home/Hot-events-item.png"/>
+				<image class="Hot-events-header-more-icon" src="http://uniapp.atongweb.com/images/home/Hot-events-item.png"></image>
 			</view>
 			<view class="uni-flex Hot-events-item">
-				<img class="Hot-events-header-more-icon" src="/static/images/home/Hot-events-item2.png"/>
+				<image class="Hot-events-header-more-icon" src="http://uniapp.atongweb.com/images/home/Hot-events-item2.png"></image>
 			</view>
 		</view>
 		<scroll-view scroll-x="true" class="Hot-events-goods" style=" white-space: nowrap; display: flex" >
 			<view class="Hot-events-goods-list">
 				<view v-for="(tab,index) in goods" :key="tab.id"   class="Hot-events-goods-item">
-					<img class="Hot-events-goods-item-img" :src="tab.img_src"/>
-					<!-- <img class="Hot-events-header-more-img" src="/static/images/home/Hot-events-item-img.png"/> -->
+					<image class="Hot-events-goods-item-img" :src="tab.img_src"></image>
 				  </view>
 			</view>
 		</scroll-view>	
@@ -37,7 +36,7 @@ export default{
 	data(){
 		return {
 			scrollLeft: 0,
-			goods:[{"id":"1","link": "details?id=84","img_src":"/static/images/home/Hot-events-item-img.png"},{"id":"2","link":"details?id=84","img_src":"/static/images/home/Hot-events-item-img.png"},{"id":"3","link":"details?id=84","img_src":"/static/images/home/Hot-events-item-img.png"},{"id":"4","link":"details?id=84","img_src":"/static/images/home/Hot-events-item-img.png"},{"id":"5","link":"details?id=84","img_src":"/static/images/home/Hot-events-item-img.png"}],
+			goods:[{"id":"1","link": "details?id=84","img_src":"http://uniapp.atongweb.com/images/home/Hot-events-item-img.png"},{"id":"2","link":"details?id=84","img_src":"http://uniapp.atongweb.com/images/home/Hot-events-item-img.png"},{"id":"3","link":"details?id=84","img_src":"http://uniapp.atongweb.com/images/home/Hot-events-item-img.png"},{"id":"4","link":"details?id=84","img_src":"http://uniapp.atongweb.com/images/home/Hot-events-item-img.png"},{"id":"5","link":"details?id=84","img_src":"http://uniapp.atongweb.com/images/home/Hot-events-item-img.png"}],
 		}
 	},
 	onLoad() {
@@ -82,7 +81,7 @@ export default{
 			width: 330rpx;
 			height:136rpx;
 		}
-		.Hot-events-item img{
+		.Hot-events-item .Hot-events-header-more-icon{
 			width:100%;
 			height:100%;
 		}

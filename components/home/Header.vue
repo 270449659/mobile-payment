@@ -2,18 +2,18 @@
 	<header class="header fixed-top">
 		<view  class="header-top">	</view>
 		<view class="search" @click="goSearch">
-			<img class="search-icon" src="/static/images/home/header-search.png">
+			<image class="search-icon" src="/static/images/home/header-search.png"></image>
 			<span class="search-text">请输入您要搜索的商品</span>
 		</view>
 		<view class="header-right">
 			<!-- 消息 -->
-			<view class="news" >
-				<img class="news-icon" src="/static/images/home/news-icon.png">
+			<view @click="getNews" class="news" >
+				<image class="news-icon" src="/static/images/home/news-icon.png"></image>
 			</view>
 			<!-- 消息 end-->
 			<!-- 选择功能 -->
 			<view class="multi-function " >
-				<img class="multi-function-icon" src="/static/images/home/multi-function-icon.png">
+				<image class="multi-function-icon" src="/static/images/home/multi-function-icon.png"></image>
 			</view>
 			<!-- 选择功能 end-->
 		</view>	
@@ -28,31 +28,32 @@ export default{
 			
 		}
 	},
+	methods: {
+		getNews(){
+			uni.navigateTo({
+				url:'/pages/news/newsIndex'			
+			})
+		}	
+	}
 }
 </script>
 <style>
 /* #ifdef APP-PLUS */
 header.fixed-top{padding-top: 33rpx;}  
 /* #endif */
-.header{
+    .header{
 		z-index: 100;
 		width: 100%;
 		display: flex;
 		flex-direction: unset;
 		align-items: center;
 		justify-content:space-between;
-		height: 116rpx !important; 
+		height: 116rpx; 
 		box-sizing: border-box;
 		border-bottom:none!important;
 		background-color: #0d92df!important;
 		box-shadow:none !important;
 		/* box-shadow: rgba(0, 0, 0, .05) 0 1px 3px; */
-	}
-	
-	.fixed-top {
-		position: fixed !important;
-		top: 0 !important;
-		bottom: auto !important;
 	}
 	.search {
 		width: 560rpx;

@@ -18,7 +18,7 @@ export default{
 	// props:['datas'],
 	data(){
 		return {
-			banner:[{"id":"1","link": "details?id=84","img_src":"/static/images/home/banner1.jpg"},{"id":"2","link":"details?id=84","img_src":"http://atongweb.com/data/afficheimg/20200227onkzcr.jpg"},{"id":"3","link":"details?id=84","img_src":"http://atongweb.com/data/afficheimg/20190722fgszmm.jpg"}],
+			banner:[{"id":"1","link": "details?id=84","img_src":"http://uniapp.atongweb.com/images/home/banner1.jpg"},{"id":"2","link":"details?id=84","img_src":"http://atongweb.com/data/afficheimg/20200227onkzcr.jpg"},{"id":"3","link":"details?id=84","img_src":"http://atongweb.com/data/afficheimg/20190722fgszmm.jpg"}],
 			indicatorDots: true,
 			autoplay: true,
 			interval: 2000,

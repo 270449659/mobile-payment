@@ -72,11 +72,13 @@
 
 <style lang="scss" scoped>
 	/* #ifdef APP-PLUS */
-	.home .content{ margin-top:145rpx;}  
+    .header {height: 170rpx; padding-top:55rpx;} 
+	.home .content{ margin-top:170rpx;}  
 	/* #endif */
 	page{background-color:#FFFF
 	// background-color:#F8F8FA
 	}
+	
 	.content {
 	    width: 100%;
 	    margin-top:116rpx;

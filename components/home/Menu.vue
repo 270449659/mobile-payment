@@ -6,44 +6,44 @@
 	</view> -->
    <view class="home-menu" >
        <view class="menu-item " @click="gohotSale()">
-        <image class="item-icon" src="/static/images/home/item1-icon.png"></image>
-        <view class="item-text">套餐余量</view>
+        <image class="item-icon" src="/static/images/home/menu-item1-icon.png"></image>
+        <view class="item-text">实名认证</view>
       </view>
       <view class="menu-item"  @click="goVoucherCenter()">
-        <image class="item-icon" src="/static/images/home/item2-icon.png"></image>
-        <view class="item-text">充值交费</view>
+        <image class="item-icon" src="/static/images/home/menu-item2-icon.png"></image>
+        <view class="item-text">钱包充值</view>
       </view>
       <view class="menu-item"  @click="goCashgift()" >
-        <image class="item-icon" src="/static/images/home/item3-icon.png"></image>
-        <view class="item-text">红包</view>
+        <image class="item-icon" src="/static/images/home/menu-item3-icon.png"></image>
+        <view class="item-text">订购套餐</view>
       </view>
      <view class="menu-item" @click="goIntegral">
-        <image class="item-icon" src="/static/images/home/item4-icon.png"></image>
-        <view class="item-text">积分</view>
+        <image class="item-icon" src="/static/images/home/menu-item4-icon.png"></image>
+        <view class="item-text">新手指导</view>
       </view>
 	  <view class="menu-item" @click="goIntegral">
-	    <image class="item-icon" src="/static/images/home/item1-icon.png"></image>
-	    <view class="item-text">积分</view>
+	    <image class="item-icon" src="/static/images/home/menu-item5-icon.png"></image>
+	    <view class="item-text">会员随心享</view>
 	  </view>
 	  <view class="menu-item" @click="goIntegral">
-	    <image class="item-icon" src="/static/images/home/item5-icon.png"></image>
-	    <view class="item-text">积分</view>
+	    <image class="item-icon" src="/static/images/home/menu-item6-icon.png"></image>
+	    <view class="item-text">续费说明</view>
 	  </view>
 	  <view class="menu-item" @click="goIntegral">
-	    <image class="item-icon" src="/static/images/home/item6-icon.png"></image>
-	    <view class="item-text">积分</view>
+	    <image class="item-icon" src="/static/images/home/menu-item7-icon.png"></image>
+	    <view class="item-text">网卡商城</view>
 	  </view>
 	  <view class="menu-item" @click="goIntegral">
-	    <image class="item-icon" src="/static/images/home/item7-icon.png"></image>
-	    <view class="item-text">积分</view>
+	    <image class="item-icon" src="/static/images/home/menu-item8-icon.png"></image>
+	    <view class="item-text">申请代理</view>
 	  </view>
 	  <view class="menu-item" @click="goIntegral">
-	    <image class="item-icon" src="/static/images/home/item7-icon.png"></image>
-	    <view class="item-text">积分</view>
+	    <image class="item-icon" src="/static/images/home/menu-item9-icon.png"></image>
+	    <view class="item-text">网卡更换</view>
 	  </view>
 	  <view class="menu-item" @click="goIntegral">
-	    <image class="item-icon" src="/static/images/home/item7-icon.png"></image>
-	    <view class="item-text">积分</view>
+	    <image class="item-icon" src="/static/images/home/menu-item10-icon.png"></image>
+	    <view class="item-text">热门优惠</view>
 	  </view>
     </view>
 </template>
@@ -89,8 +89,8 @@ export default{
 	
 	  .home-menu .menu-item .item-icon {
 	    display: block;
-	    width: 68rpx;
-	    height: 68rpx;
+	    width: 79rpx;
+	    height: 79rpx;
 	    margin: 0 auto;
 	    overflow: hidden;
 	  }

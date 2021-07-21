@@ -50,7 +50,7 @@
 			     <view class="flex-justify-content-s-b mgb40"><view class="payment-title"><image class="payment-icon" src="/static/images/user/WeChat-icon.png"></image>微信</view><label class="radio"><radio value="r1" checked="true" /></label></view>
 			    <view class="flex-justify-content-s-b mgb40"> <view class="payment-title"><image class="payment-icon" src="/static/images/user/Alipay-icon.png"></image>支付宝</view><label class="radio"><radio value="r1" checked="true" /></label></view>
 			    <view class="flex-justify-content-s-b mgb40"> <view class="payment-title"> <image class="payment-icon" src="/static/images/user/balance-icon.png"></image>钱包</view><label class="radio"><radio value="r1" checked="true" /></label></view>
-			    <view class="flex-justify-content-s-b "> <view class="payment-title"><image class="payment-icon" src="/static/images/user/balance-icon.png"></image>银联</view><label class="radio"><radio value="r1" checked="true" /></label></view>
+			    <view class="flex-justify-content-s-b "> <view class="payment-title"><image class="payment-icon" src="/static/images/user/unionPay-icon.png"></image>银联</view><label class="radio"><radio value="r1" checked="true" /></label></view>
 		</view>
 		<view class="discount mgt50 flex-justify-content-s-b">
 			<label class="radio"><radio value="r1" checked="true" />优惠</label>

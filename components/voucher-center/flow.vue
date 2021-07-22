@@ -63,12 +63,17 @@
 					<text>1G</text>
 					<text class="monthly-package-item-text">20.00元</text>	
 				</view>
+				<view @click="monthlyPackage(3)" class="monthly-package-item flex-justify-content-center">
+					<image src="/static/images/voucherCenter/monthly-package-icon.png"></image> 
+					<text>1G</text>
+					<text class="monthly-package-item-text">20.00元</text>	
+				</view>
 			</view>
 		</view>
 		<!-- 包月 end-->
 	
 		<!-- 加油包-->
-		<view class="monthly-package superposition mgt50">
+		<view class="monthly-package superposition mgt30">
 			<view class="flex-align-items-center monthly-package-title">
 				<view class="title-vertical"></view>
 				<text class="monthly-package-title-text mgl20">加油包</text>
@@ -312,8 +317,8 @@ export default{
    	width:29rpx;
    	height: 28rpx;
    	}
-   .monthly-package .monthly-package-list{justify-content:space-between;}
-   .monthly-package .monthly-package-item{position: relative; width: 218rpx; border: 1px solid #f0aa82; flex-direction: column; padding: 30rpx 0;  border-radius: 25rpx;   }
+   .monthly-package .monthly-package-list{justify-content:space-between; flex-wrap: wrap;}
+   .monthly-package .monthly-package-item{position: relative; width: 218rpx; border: 1px solid #f0aa82; flex-direction: column; padding: 30rpx 0;  margin-bottom: 20rpx; border-radius: 25rpx;   }
    	
    .monthly-package .monthly-package-item image{
    	position: absolute; bottom: 0; left: 0;

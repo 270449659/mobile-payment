@@ -20,6 +20,7 @@
 	.uni-block{display: block;}
 	.uni-flex{display: flex;}
 	.flex-warp{display: flex; flex-wrap: wrap;}
+	.flex-direction-column{display: flex; flex-direction: column;} 
 	.flex-align-items-center{display:flex; align-items: center;}
 	.flex-justify-content-b{display:flex;justify-content: space-between;}
 	.flex-justify-content-center{display:flex; align-items: center;justify-content:center;}
@@ -35,7 +36,10 @@
 	.mgl5{margin-left:5rpx!important;}
 	.mgl10{margin-left:10rpx!important;}
 	.mgl20{margin-left:20rpx!important;}
+	.mgl30{margin-left:30rpx!important;}
 	.mgr20{margin-right:20rpx!important;}
+	.mgr25{margin-right:25rpx!important;}
+	.mgr30{margin-right:30rpx!important;}
 	.mgb20{margin-bottom: 20rpx !important;}
 	.mgb25{margin-bottom: 25rpx !important;}
 	.mgb40{margin-bottom: 40rpx !important;}

@@ -233,7 +233,7 @@ var _vuex = __webpack_require__(/*! vuex */ 12); //
 //
 //
 //
-var UserMenu = function UserMenu() {__webpack_require__.e(/*! require.ensure | components/user/UserMenu */ "components/user/UserMenu").then((function () {return resolve(__webpack_require__(/*! @/components/user/UserMenu */ 152));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { UserMenu: UserMenu }, data: function data() {return { title: 'Hello' };}, onLoad: function onLoad() {}, onShow: function onShow() {this.isLogin = this.$isLogin();if (this.isLogin) {uni.startPullDownRefresh();}}, methods: {} };exports.default = _default;
+var UserMenu = function UserMenu() {__webpack_require__.e(/*! require.ensure | components/user/UserMenu */ "components/user/UserMenu").then((function () {return resolve(__webpack_require__(/*! @/components/user/UserMenu */ 160));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { UserMenu: UserMenu }, data: function data() {return { title: 'Hello' };}, onLoad: function onLoad() {}, onShow: function onShow() {this.isLogin = this.$isLogin();if (this.isLogin) {uni.startPullDownRefresh();}}, methods: {} };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),

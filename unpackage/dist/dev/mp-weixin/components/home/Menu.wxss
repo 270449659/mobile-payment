@@ -20,8 +20,8 @@
 }
 .home-menu .menu-item .item-icon {
 	    display: block;
-	    width: 68rpx;
-	    height: 68rpx;
+	    width: 79rpx;
+	    height: 79rpx;
 	    margin: 0 auto;
 	    overflow: hidden;
 }

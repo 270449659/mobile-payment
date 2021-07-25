@@ -5,6 +5,7 @@
     "pages/user/card-information",
     "pages/query/index",
     "pages/customerService/customerServiceIndex",
+    "pages/news/newsIndex",
     "pages/voucherCenter/index",
     "pages/login/login",
     "pages/index/index"

@@ -15,7 +15,7 @@
 		-webkit-box-pack:justify;
 		-webkit-justify-content:space-between;
 		        justify-content:space-between;
-		height: 116rpx !important; 
+		height: 116rpx; 
 		-webkit-box-sizing: border-box; 
 		        box-sizing: border-box;
 		border-bottom:none!important;
@@ -23,11 +23,6 @@
 		-webkit-box-shadow:none !important;
 		        box-shadow:none !important;
 		/* box-shadow: rgba(0, 0, 0, .05) 0 1px 3px; */
-}
-.fixed-top {
-		position: fixed !important;
-		top: 0 !important;
-		bottom: auto !important;
 }
 .search {
 		width: 560rpx;

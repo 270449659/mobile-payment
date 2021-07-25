@@ -44,6 +44,7 @@
 	.mgb25{margin-bottom: 25rpx !important;}
 	.mgb40{margin-bottom: 40rpx !important;}
 	.mglr30{margin-left: 30rpx!important;margin-right:30rpx!important;}
+	.pdr15{padding-right: 15rpx !important;}
 	.mglr45{margin-left: 45rpx!important;margin-right:45rpx!important;}
 	.pdb30{padding-bottom: 30rpx !important;}
 	.mgb50{margin-bottom: 50rpx !important;}

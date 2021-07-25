@@ -4,8 +4,8 @@
 			<view class="uni-page-head-left"></view><!-- uni-page-head-left end-->
 			<view class="uni-flex uni-page-head-right">
 				<view class="uni-page-head-right-btn"><image class="setUp-icon" src="/static/images/user/setUp-icon.png"></image></view>
-			    <view class="uni-page-head-right-btn"><image class="customerService-icon" src="/static/images/user/customerService-icon.png"></image></view>
-				<view class="uni-page-head-right-btn"><image class="news-icon" src="/static/images/user/news-icon.png"></image></view>
+			    <view @click="getCustomerService"   class="uni-page-head-right-btn"><image class="customerService-icon" src="/static/images/user/customerService-icon.png"></image></view>
+				<view @click="getNews" class="uni-page-head-right-btn"><image class="news-icon" src="/static/images/user/news-icon.png"></image></view>
 			</view>
 		</view><!-- uni-page-head end-->
 		<view class="content">
@@ -101,8 +101,17 @@
 				uni.navigateTo({
 				 url: "/pages/login/login"
 				});
+			},
+			getNews(){
+				uni.navigateTo({
+				 url: "/pages/news/newsIndex"
+				});
+			},
+           getCustomerService(){
+			   uni.navigateTo({
+			    url: "/pages/customerService/customerServiceIndex"
+			   });
 			}
- 
 			
 		}
 	}

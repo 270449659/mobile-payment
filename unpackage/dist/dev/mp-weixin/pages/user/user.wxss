@@ -1,122 +1,187 @@
-
-page{background-color: #f6f6f6;}
-.uni-page-head{
-		background-color: #3e7cf3;
-		-webkit-box-pack: justify;
-		-webkit-justify-content: space-between;
-		        justify-content: space-between;
-		padding:30rpx 30rpx;
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+page.data-v-80842834 {
+  background-color: #f6f6f6;
 }
-.uni-page-head .uni-page-head-right{}
-.uni-page-head .uni-page-head-right-btn {
-	    display: -webkit-box;
-	    display: -webkit-flex;
-	    display: flex;
-	    -webkit-box-align: center;
-	    -webkit-align-items: center;
-	            align-items: center;
-	    width: 45rpx;
-	    height: 45rpx;
-	    border-radius: 50%;
-		margin-left: 30rpx;
+.uni-page-head.data-v-80842834 {
+  width: 100%;
+  height: 105rpx;
+  z-index: 100;
+  background-color: #3e7cf3;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  padding: 30rpx 30rpx;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-.content {
-		/* display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center; */
+.uni-page-head .uni-page-head-right-btn.data-v-80842834 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  width: 45rpx;
+  height: 45rpx;
+  border-radius: 50%;
+  margin-left: 30rpx;
 }
-.user-section{
-	  padding: 20rpx 30rpx 100rpx 30rpx;
-      position: relative;
-	  background-color: #3e7cf3;
-	   border-radius: 0 0 300rpx 300rpx/0 0 20rpx 20rpx;
+.setUp-icon.data-v-80842834 {
+  width: 100%;
+  height: 100%;
 }
-.user-section .bg {
-	    position: absolute;
-	    left: 0;
-	    top: 0;
-	    width: 100%;
-	    height: 100%;
-	    -webkit-filter: blur(1px);
-	    filter: blur(1px);
+.customerService-icon.data-v-80842834 {
+  width: 100%;
+  height: 100%;
 }
-.user-info-box{
-		display: -webkit-box;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-box-align: center;
-		-webkit-align-items: center;
-		        align-items: center;
-		z-index: 1;
-		color: #fff;
+.news-icon.data-v-80842834 {
+  width: 100%;
+  height: 100%;
 }
-.user-info-box.uni-block{display: block;}
-.user-info-box .portrait-box{
-	    width: 90rpx;
-	    height:90rpx;
-	    border: 2px solid #fff;
-	    border-radius: 50%;
+.content.data-v-80842834 {
+  width: 100%;
+  margin-top: 105rpx;
+  padding-bottom: 25rpx;
 }
-.user-info-box .portrait{
-	    width: 100%;
-	    height:100%;
-	    border-radius: 50%;
+.user-section.data-v-80842834 {
+  padding: 20rpx 30rpx 100rpx 30rpx;
+  position: relative;
+  background-color: #3e7cf3;
+  border-radius: 0 0 300rpx 300rpx/0 0 20rpx 20rpx;
 }
-.info-box{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;flex-direction:column; z-index: 1;}
-.user-info-box .user-number {
-	    font-size: 38rpx;
-	    margin-left: 33rpx;
+.user-section .bg.data-v-80842834 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: blur(1px);
+  filter: blur(1px);
 }
-.user-info-box .user-name {
-	    font-size: 23rpx;
-	    margin-left: 33rpx;
+.user-info-box.data-v-80842834 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  z-index: 1;
+  color: #fff;
 }
-.user-info-box .set-meal,.user-info-box .credit-score{
-		padding: 4rpx 15rpx;
-		border: 1px solid #fff;
-		border-radius: 25rpx; 
-		 -webkit-box-align: center; 
-		 -webkit-align-items: center; 
-		         align-items: center;
-		z-index: 1;
-		margin-right: 12rpx;
+.user-info-box.uni-block.data-v-80842834 {
+  display: block;
 }
-.user-info-box .set-meal text,.user-info-box .credit-score text{
-		font-size:20rpx;
-		margin-right: 15rpx;
+.user-info-box .portrait-box.data-v-80842834 {
+  width: 90rpx;
+  height: 90rpx;
+  border: 2px solid #fff;
+  border-radius: 50%;
 }
-.user-info-box .set-meal image,.user-info-box .credit-score image{  width:7rpx; height: 13rpx;
+.user-info-box .portrait.data-v-80842834 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
-.user-info-box-list{-webkit-justify-content:space-around;justify-content:space-around;}
-.user-info-box-list .user-info-box-item{ text-align: center;}
-.user-info-box-list .user-info-box-item .user-info-box-item-number{font-size: 33rpx; line-height: 34rpx; height: 34rpx;}
-.user-info-box-list .user-info-box-item .user-info-box-item-number text{font-size: 18rpx;}
-.user-info-box-list .user-info-box-item .user-info-box-item-font{font-size: 22rpx;}
-uni-image {
-	    max-width: 100%;
-	    display: inline-block;
-	    position: relative;
-	    z-index: 0;
+.info-box.data-v-80842834 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  z-index: 1;
 }
-.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin-top: 200rpx;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 50rpx;
+.user-info-box .user-number.data-v-80842834 {
+  font-size: 38rpx;
+  margin-left: 33rpx;
 }
-.text-area {
-		display: -webkit-box;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-box-pack: center;
-		-webkit-justify-content: center;
-		        justify-content: center;
+.user-info-box .user-name.data-v-80842834 {
+  font-size: 23rpx;
+  margin-left: 33rpx;
 }
-.title {
-		font-size: 36rpx;
-		color: #8f8f94;
+.user-info-box .set-meal.data-v-80842834, .user-info-box .credit-score.data-v-80842834 {
+  padding: 4rpx 15rpx;
+  border: 1px solid #fff;
+  border-radius: 25rpx;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  z-index: 1;
+  margin-right: 12rpx;
+}
+.user-info-box .set-meal text.data-v-80842834, .user-info-box .credit-score text.data-v-80842834 {
+  font-size: 20rpx;
+  margin-right: 15rpx;
+}
+.user-info-box .set-meal image.data-v-80842834, .user-info-box .credit-score image.data-v-80842834 {
+  width: 7rpx;
+  height: 13rpx;
+}
+.user-info-box-list.data-v-80842834 {
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+}
+.user-info-box-list .user-info-box-item.data-v-80842834 {
+  text-align: center;
+}
+.user-info-box-list .user-info-box-item .user-info-box-item-number.data-v-80842834 {
+  font-size: 33rpx;
+  line-height: 34rpx;
+  height: 34rpx;
+}
+.user-info-box-list .user-info-box-item .user-info-box-item-number text.data-v-80842834 {
+  font-size: 18rpx;
+}
+.user-info-box-list .user-info-box-item .user-info-box-item-font.data-v-80842834 {
+  font-size: 22rpx;
+}
+uni-image.data-v-80842834 {
+  max-width: 100%;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+}
+.logo.data-v-80842834 {
+  height: 200rpx;
+  width: 200rpx;
+  margin-top: 200rpx;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50rpx;
+}
+.text-area.data-v-80842834 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.title.data-v-80842834 {
+  font-size: 36rpx;
+  color: #8f8f94;
 }
 

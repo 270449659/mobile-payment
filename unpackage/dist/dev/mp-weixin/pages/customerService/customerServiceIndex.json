@@ -1,6 +1,5 @@
 {
-  "navigationBarBackgroundColor": "#03b7e0",
+  "navigationBarBackgroundColor": "white",
   "navigationBarTitleText": "在线客服",
-  "navigationBarTextStyle": "white",
   "usingComponents": {}
 }

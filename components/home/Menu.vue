@@ -41,7 +41,7 @@
 	    <image class="item-icon" src="/static/images/home/menu-item9-icon.png"></image>
 	    <view class="item-text">网卡更换</view>
 	  </view>
-	  <view class="menu-item" @click="goIntegral">
+	  <view class="menu-item" @click="liaotian">
 	    <image class="item-icon" src="/static/images/home/menu-item10-icon.png"></image>
 	    <view class="item-text">热门优惠</view>
 	  </view>
@@ -61,7 +61,12 @@ export default{
 			uni.navigateTo({
 				url:'/pages/voucherCenter/index'			
 			})
-		}	
+		},
+		liaotian(){
+			uni.navigateTo({
+				url:'/pages/liaotian/index'			
+			})
+		},
 	}
 	
 }

@@ -2,6 +2,7 @@
   "pages": [
     "pages/home/index",
     "pages/user/user",
+    "pages/liaotian/index",
     "pages/user/card-information",
     "pages/query/index",
     "pages/customerService/customerServiceIndex",

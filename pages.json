@@ -1,5 +1,6 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
 		{
 			"path" : "pages/home/index",
 			"style" : {
@@ -25,6 +26,14 @@
 			}
 		},
 		{
+			"path": "pages/liaotian/index",
+			"style": {
+				"navigationBarBackgroundColor":"#3e7cf3",
+				"navigationBarTitleText": "卡片信息",
+				"navigationBarTextStyle":"white"  //状态栏字体颜色
+			}
+		},
+		{
 			"path": "pages/user/card-information",
 			"style": {
 				"navigationBarBackgroundColor":"#3e7cf3",
@@ -43,7 +52,7 @@
 		{
 			"path": "pages/customerService/customerServiceIndex",
 			"style": {
-				"navigationBarBackgroundColor":"white",
+				"navigationBarBackgroundColor":"#fff",
 				"navigationBarTitleText": "在线客服"
 				
 			

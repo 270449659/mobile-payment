@@ -4,30 +4,45 @@
     "ignore": []
   },
   "setting": {
-    "urlCheck": true,
-    "postcss": true,
+    "urlCheck": false,
     "es6": true,
-    "minified": true
+    "postcss": false,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": false
   },
   "compileType": "miniprogram",
   "libVersion": "",
-  "appid": "wxe62ad8e92f037b2a",
+  "appid": "wx2e1e71c916ac60ad",
   "projectname": "mobile-payment",
   "condition": {
     "search": {
-      "current": -1,
       "list": []
     },
     "conversation": {
-      "current": -1,
       "list": []
     },
     "game": {
-      "current": -1,
       "list": []
     },
     "miniprogram": {
-      "current": -1,
       "list": []
     }
   }

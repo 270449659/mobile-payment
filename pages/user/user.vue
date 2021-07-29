@@ -117,7 +117,7 @@
 	}
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 	/* #ifdef APP-PLUS */
 	.user .uni-page-head {height: 160rpx; padding-top:55rpx;} 
 	.user .content{ margin-top:160rpx;}  

@@ -1,5 +1,5 @@
 <template>
-	<view class="home">
+	<view class="home" :style="{height:'10' + 'px'}">
 		<!-- header --><Header></Header><!-- header end-->
 		<!-- content -->
 		<view class="content">

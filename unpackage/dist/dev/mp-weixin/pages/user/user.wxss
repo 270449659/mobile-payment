@@ -24,10 +24,10 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-page.data-v-80842834 {
+page {
   background-color: #f6f6f6;
 }
-.uni-page-head.data-v-80842834 {
+.uni-page-head {
   width: 100%;
   height: 105rpx;
   z-index: 100;
@@ -39,7 +39,7 @@ page.data-v-80842834 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.uni-page-head .uni-page-head-right-btn.data-v-80842834 {
+.uni-page-head .uni-page-head-right-btn {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -51,30 +51,30 @@ page.data-v-80842834 {
   border-radius: 50%;
   margin-left: 30rpx;
 }
-.setUp-icon.data-v-80842834 {
+.setUp-icon {
   width: 100%;
   height: 100%;
 }
-.customerService-icon.data-v-80842834 {
+.customerService-icon {
   width: 100%;
   height: 100%;
 }
-.news-icon.data-v-80842834 {
+.news-icon {
   width: 100%;
   height: 100%;
 }
-.content.data-v-80842834 {
+.content {
   width: 100%;
   margin-top: 105rpx;
   padding-bottom: 25rpx;
 }
-.user-section.data-v-80842834 {
+.user-section {
   padding: 20rpx 30rpx 100rpx 30rpx;
   position: relative;
   background-color: #3e7cf3;
   border-radius: 0 0 300rpx 300rpx/0 0 20rpx 20rpx;
 }
-.user-section .bg.data-v-80842834 {
+.user-section .bg {
   position: absolute;
   left: 0;
   top: 0;
@@ -83,7 +83,7 @@ page.data-v-80842834 {
   -webkit-filter: blur(1px);
   filter: blur(1px);
 }
-.user-info-box.data-v-80842834 {
+.user-info-box {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -93,36 +93,36 @@ page.data-v-80842834 {
   z-index: 1;
   color: #fff;
 }
-.user-info-box.uni-block.data-v-80842834 {
+.user-info-box.uni-block {
   display: block;
 }
-.user-info-box .portrait-box.data-v-80842834 {
+.user-info-box .portrait-box {
   width: 90rpx;
   height: 90rpx;
   border: 2px solid #fff;
   border-radius: 50%;
 }
-.user-info-box .portrait.data-v-80842834 {
+.user-info-box .portrait {
   width: 100%;
   height: 100%;
   border-radius: 50%;
 }
-.info-box.data-v-80842834 {
+.info-box {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
           flex-direction: column;
   z-index: 1;
 }
-.user-info-box .user-number.data-v-80842834 {
+.user-info-box .user-number {
   font-size: 38rpx;
   margin-left: 33rpx;
 }
-.user-info-box .user-name.data-v-80842834 {
+.user-info-box .user-name {
   font-size: 23rpx;
   margin-left: 33rpx;
 }
-.user-info-box .set-meal.data-v-80842834, .user-info-box .credit-score.data-v-80842834 {
+.user-info-box .set-meal, .user-info-box .credit-score {
   padding: 4rpx 15rpx;
   border: 1px solid #fff;
   border-radius: 25rpx;
@@ -132,39 +132,39 @@ page.data-v-80842834 {
   z-index: 1;
   margin-right: 12rpx;
 }
-.user-info-box .set-meal text.data-v-80842834, .user-info-box .credit-score text.data-v-80842834 {
+.user-info-box .set-meal text, .user-info-box .credit-score text {
   font-size: 20rpx;
   margin-right: 15rpx;
 }
-.user-info-box .set-meal image.data-v-80842834, .user-info-box .credit-score image.data-v-80842834 {
+.user-info-box .set-meal image, .user-info-box .credit-score image {
   width: 7rpx;
   height: 13rpx;
 }
-.user-info-box-list.data-v-80842834 {
+.user-info-box-list {
   -webkit-justify-content: space-around;
           justify-content: space-around;
 }
-.user-info-box-list .user-info-box-item.data-v-80842834 {
+.user-info-box-list .user-info-box-item {
   text-align: center;
 }
-.user-info-box-list .user-info-box-item .user-info-box-item-number.data-v-80842834 {
+.user-info-box-list .user-info-box-item .user-info-box-item-number {
   font-size: 33rpx;
   line-height: 34rpx;
   height: 34rpx;
 }
-.user-info-box-list .user-info-box-item .user-info-box-item-number text.data-v-80842834 {
+.user-info-box-list .user-info-box-item .user-info-box-item-number text {
   font-size: 18rpx;
 }
-.user-info-box-list .user-info-box-item .user-info-box-item-font.data-v-80842834 {
+.user-info-box-list .user-info-box-item .user-info-box-item-font {
   font-size: 22rpx;
 }
-uni-image.data-v-80842834 {
+uni-image {
   max-width: 100%;
   display: inline-block;
   position: relative;
   z-index: 0;
 }
-.logo.data-v-80842834 {
+.logo {
   height: 200rpx;
   width: 200rpx;
   margin-top: 200rpx;
@@ -172,7 +172,7 @@ uni-image.data-v-80842834 {
   margin-right: auto;
   margin-bottom: 50rpx;
 }
-.text-area.data-v-80842834 {
+.text-area {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -180,7 +180,7 @@ uni-image.data-v-80842834 {
   -webkit-justify-content: center;
           justify-content: center;
 }
-.title.data-v-80842834 {
+.title {
   font-size: 36rpx;
   color: #8f8f94;
 }
